@@ -35,9 +35,8 @@ char* reverseStr(char *strData)
             --sigleStrLen;
             int tmpCount = 2;
             while(sigleStrLen != 0)
-            {
-                char aChar = *(strData-tmpCount);
-                *(--tmp1) = aChar;
+            {                
+                *(--tmp1) = *(strData-tmpCount);
                 ++tmpCount;
                 --sigleStrLen;
             }
